@@ -48,7 +48,7 @@ public class DiceApp
         int diceFace = -1;
         while(diceFace == -1){
             System.out.println("Insert number of face (4/ 6/ 8/ 10/ 12/ 16/ 20/ 100)");
-            diceFace = checkDiceFace(scanner);
+            diceFace = checkDiceFace(scanner.nextInt());
             if(diceFace == -1)
             {
                 System.out.println("Invalid");
@@ -57,10 +57,8 @@ public class DiceApp
         return diceFace;
     }
 
-    private static int checkDiceFace(Scanner scanner)
-    {
-        int numOfFace = scanner.nextInt();
-        
+    private static int checkDiceFace(int numOfFace)
+    {        
         switch (numOfFace) {
             case 4:
                 return numOfFace;
