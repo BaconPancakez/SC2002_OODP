@@ -1,11 +1,10 @@
-package tutorial2.Dice.src;
+package T2Q2.src.dice;
 
-interface Dice {
+public interface Dice {
 
     void setDiceValue(int face); 
     
     int getDiceValue();
     
     void printDiceValue();
-    
 }
