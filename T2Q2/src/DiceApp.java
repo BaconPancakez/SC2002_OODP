@@ -1,7 +1,7 @@
 package T2Q2.src;
 
-import java.util.Scanner;
 import T2Q2.src.dice.*;
+import java.util.Scanner;
 
 public class DiceApp {
     public static void main(String[] args) {
@@ -39,6 +39,7 @@ public class DiceApp {
         while (diceFace == -1) {
             System.out.println("Insert number of face (4/ 6/ 8/ 10/ 12/ 16/ 20/ 100)");
             diceFace = scanner.nextInt();
+            scanner.nextLine();
 
             if (diceFace == 4 || diceFace == 6 || diceFace == 8 || diceFace == 10 ||
             diceFace == 12 || diceFace == 16 || diceFace == 20 || diceFace == 100) {
