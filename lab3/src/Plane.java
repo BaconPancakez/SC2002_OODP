@@ -27,7 +27,7 @@ public class Plane {
 
     public void showEmptySeats(){
         System.out.println("The following seats are empty");
-        for(PlaneSeat seat : seats){
+        for(PlaneSeat seat : seats){ //for seat in seats
             if(!seat.isOccupied())
             {
                 System.out.println("SeatID " + seat.getSeatID());
@@ -38,7 +38,7 @@ public class Plane {
     public void showAssignedSeats(boolean bySeatId){
         PlaneSeat[] sortedSeats = bySeatId ? seats: sortSeats();
         System.out.println("The seat assignments are as follows: ");
-        for(PlaneSeat seat: sortedSeats){
+        for(PlaneSeat seat: sortedSeats){ //for seat in sorted_seats
             if (seat.isOccupied()){
                 System.out.println("SeatID " + seat.getSeatID() + " assigned to CustomerID " + seat.getCustomerId());
             }
