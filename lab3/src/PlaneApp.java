@@ -10,6 +10,7 @@ public class PlaneApp {
         printMenu();
 
         do {
+            System.out.print("\nEnter the number of your choice: ");
             choice = sc.nextInt();
 
             switch(choice){
@@ -56,6 +57,5 @@ public class PlaneApp {
         System.out.println("(5) Assign a customer to a seat");
         System.out.println("(6) Remove a seat assignment");
         System.out.println("(7) Exit");
-        System.out.print("Enter the number of your choice: ");
     }
 }
