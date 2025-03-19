@@ -57,6 +57,11 @@ public class Lab2p1 {
                 case 6: /* add extractOddDigits() call */
                     System.out.println("Input the value: ");
                     odd = sc.nextLong();
+                    if(odd < 0)
+                    {
+                        System.out.println("Error input!!");
+                        break;
+                    }
                     System.out.printf("Position = %d\n",extractOddDigits(odd));
                     break;
                 case 7: System.out.println("Program terminating ….");
@@ -83,13 +88,13 @@ public class Lab2p1 {
     private static int divide(int m, int n)
     {
         int count = 0;
-        while( m >= n)
+        while(m >= n)
         {
             m = m - n;
             count += 1;
-            if(m < n){
-                return count;
-            }
+        //     if(m < n){
+        //         return count;
+        //     }
         }
         return count;
     }
@@ -146,7 +151,7 @@ public class Lab2p1 {
     {
         long num = 0;
         int times = 1,digit;
-        while(n > 0)
+        while(n >= 0)
         {
             digit = modulus((int)n, 10);
             if(modulus(digit, 2) != 0)
@@ -155,6 +160,10 @@ public class Lab2p1 {
                 times = times * 10;
             }
             n = n / 10;
+        }
+        if(num == 0)
+        {
+            num = -1;
         }
         return num;
     }
