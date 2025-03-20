@@ -16,8 +16,8 @@ public class Plane {
     }
 
     private PlaneSeat[] sortSeats(){
-        PlaneSeat[] sortedSeats = Arrays.copyOf(seats, seats.length);
-        Arrays.sort(sortedSeats, Comparator.comparingInt(PlaneSeat::getCustomerId));
+        PlaneSeat[] sortedSeats = Arrays.copyOf(seats, seats.length); //Copy array
+        Arrays.sort(sortedSeats, Comparator.comparingInt(PlaneSeat::getCustomerId)); // Sorting
         return sortedSeats;
     }
 
