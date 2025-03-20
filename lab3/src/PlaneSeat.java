@@ -1,7 +1,5 @@
 package lab3.src;
 
-import java.util.concurrent.Flow;
-
 public class PlaneSeat {
     private int seatId;
     private boolean assigned;
