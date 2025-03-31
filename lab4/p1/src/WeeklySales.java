@@ -1,4 +1,4 @@
-package lab4;
+package lab4.p1.src;
 // *************************************************************
 // WeeklySales.java
 //
@@ -26,5 +26,4 @@ public class WeeklySales {
 		for (SalePerson s : salesStaff)
 			System.out.println (s);
 	}
-}
 }

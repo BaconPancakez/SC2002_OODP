@@ -1,4 +1,4 @@
-package lab4;
+package lab4.p1.src;
 
 import java.util.Scanner;
 
