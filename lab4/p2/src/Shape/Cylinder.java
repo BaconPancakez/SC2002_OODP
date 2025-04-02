@@ -1,4 +1,4 @@
-package lab4.p2.Shape;
+package lab4.p2.src.Shape;
 
 public class Cylinder extends Rectangle{
     private static final double PI = 3.14159;

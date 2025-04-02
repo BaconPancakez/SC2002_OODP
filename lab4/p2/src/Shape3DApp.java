@@ -1,12 +1,13 @@
-package lab4.p2;
+package lab4.p2.src;
 
 import java.util.Scanner;
-import lab4.p2.Shape.Cone;
-import lab4.p2.Shape.Cubiod;
-import lab4.p2.Shape.Cylinder;
-import lab4.p2.Shape.Pyramid;
-import lab4.p2.Shape.Shape;
-import lab4.p2.Shape.Sphere;
+
+import lab4.p2.src.Shape.Cone;
+import lab4.p2.src.Shape.Cubiod;
+import lab4.p2.src.Shape.Cylinder;
+import lab4.p2.src.Shape.Pyramid;
+import lab4.p2.src.Shape.Shape;
+import lab4.p2.src.Shape.Sphere;
 
 public class Shape3DApp {
     public static void main(String[] args) {

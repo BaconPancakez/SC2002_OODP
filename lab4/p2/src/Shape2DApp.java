@@ -1,12 +1,12 @@
-package lab4.p2;
+package lab4.p2.src;
 
 import java.util.Scanner;
 
-import lab4.p2.Shape.Circle;
-import lab4.p2.Shape.Rectangle;
-import lab4.p2.Shape.Shape;
-import lab4.p2.Shape.Square;
-import lab4.p2.Shape.Triangle;
+import lab4.p2.src.Shape.Circle;
+import lab4.p2.src.Shape.Rectangle;
+import lab4.p2.src.Shape.Shape;
+import lab4.p2.src.Shape.Square;
+import lab4.p2.src.Shape.Triangle;
 
 public class Shape2DApp {
     public static void main(String[] args) {

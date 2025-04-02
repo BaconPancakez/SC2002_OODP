@@ -1,4 +1,4 @@
-package lab4.p2.Shape;
+package lab4.p2.src.Shape;
 
 public class Pyramid extends Triangle{
     public Pyramid(int h, int b)
