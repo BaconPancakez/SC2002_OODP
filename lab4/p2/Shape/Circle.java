@@ -1,8 +1,8 @@
-package lab4.p2;
+package lab4.p2.Shape;
 
 public class Circle implements Shape{
     private static final double PI = 3.14159;
-    private int radius; 
+    protected int radius; 
 
     public Circle(int r)
     {

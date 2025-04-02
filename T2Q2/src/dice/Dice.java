@@ -8,3 +8,4 @@ public interface Dice {
     
     void printDiceValue();
 }
+i

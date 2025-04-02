@@ -1,7 +1,7 @@
-package lab4.p2;
+package lab4.p2.Shape;
 
 public class Rectangle implements Shape{
-    private int length,breadth;
+    protected int length,breadth;
 
     public Rectangle(int l, int b)
     {

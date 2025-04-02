@@ -1,4 +1,4 @@
-package lab4.p2;
+package lab4.p2.Shape;
 
 public class Square implements Shape{
     private int length;
