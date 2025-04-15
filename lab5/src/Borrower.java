@@ -4,16 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Borrower {
-    private String name;
+    private String borrowerName;
     private List<String> borrowedBooks;
 
-    public Borrower(String name) {
-        this.name = name;
+    public Borrower(String borrowerName) {
+        this.borrowerName = borrowerName;
         this.borrowedBooks = new ArrayList<>();
     }
 
-    public String getName() {
-        return name;
+    public String getBorrowerName() {
+        return borrowerName;
     }
 
     public List<String> getBorrowedBooks() {
@@ -30,6 +30,6 @@ public class Borrower {
 
     @Override
     public String toString() {
-        return String.format("{\"name\": \"%s\", \"borrowedBooks\": %s}", name, borrowedBooks);
+        return "{\"name\": \"" + this.borrowerName + "\", \"borrowedBooks\": " + this.borrowedBooks + "}";
     }
 }

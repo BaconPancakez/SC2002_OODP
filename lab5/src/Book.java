@@ -6,35 +6,36 @@ public class Book {
     private String title;
     private String author;
     private String genre;
-    private int yearPublished;
+    private int publicationYear;
 
-    public Book(String title, String author, String genre, int yearPublished) {
+    public Book(String title, String author, String genre, int publicationYear) {
         this.title = title;
         this.author = author;
         this.genre = genre;
-        this.yearPublished = yearPublished;
+        this.publicationYear = publicationYear;
     }
 
     public String getTitle() {
-        return title;
+        return this.title;
     }
 
     public String getAuthor() {
-        return author;
+        return this.author;
     }
 
     public String getGenre() {
-        return genre;
+        return this.genre;
     }
 
-    public int getYearPublished() {
-        return yearPublished;
+    public int getPublicationYear() {
+        return this.publicationYear;
     }
 
     @Override
     public String toString() {
-        return String.format("{\"title\": \"%s\", \"author\": \"%s\", \"genre\": \"%s\", \"publicationYear\": %d}",
-                title, author, genre, yearPublished);
+        return "{\"title\": \"" + this.title
+                + "\", \"author\": \"" + this.author + "\", \"genre\": \"" + this.genre
+                + "\", \"publicationYear\":" + this.publicationYear + "}";
     }
 
     @Override
@@ -44,7 +45,15 @@ public class Book {
         if (o == null || getClass() != o.getClass())
             return false;
         Book book = (Book) o;
-        return yearPublished == book.yearPublished && Objects.equals(title, book.title)
-                && Objects.equals(author, book.author) && Objects.equals(genre, book.genre);
+        return publicationYear == book.publicationYear &&
+                Objects.equals(title, book.title) &&
+                Objects.equals(author, book.author) &&
+                Objects.equals(genre, book.genre);
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(title, author, genre, publicationYear);
+    }
+
 }
